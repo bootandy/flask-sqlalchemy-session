@@ -1,0 +1,20 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+flake8 = "*"
+pytest = "==4"
+tox-travis = "*"
+pep8 = "*"
+Flask = "*"
+SQLAlchemy = "==1.2"
+zipp = "==0.6"
+more-itertools = "==4.0"
+configparser = "*"
+
+[requires]
+python_version = "3.6"

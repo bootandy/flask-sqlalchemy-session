@@ -1,20 +1,12 @@
 language: python
 python:
   - "2.7"
-env:
-  - TOXENV=py26
-  - TOXENV=py27
-  - TOXENV=py33
-  - TOXENV=py34
-  - TOXENV=sqla9
-  - TOXENV=pypy
-  - TOXENV=pypy3
-  - TOXENV=lint
-  - TOXENV=coverage
+  - "3.6"
 install:
-  - "pip install tox"
+  - pip install pipenv
+  - pipenv install
 # command to run tests
-script: tox
+script: pipenv run python -m pytest
 branches:
   only:
     - master

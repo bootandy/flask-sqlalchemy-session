@@ -1,0 +1,6 @@
+flask
+sqlalchemy
+flake8
+pytest
+tox-travis
+pep8
